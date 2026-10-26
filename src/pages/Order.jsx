@@ -5,6 +5,8 @@ import Card from '../components/Card'
 import Field from '../components/Field'
 import Section from '../components/Section'
 
+const today = new Date().toISOString().slice(0, 10) // format AAAA-MM-JJ
+
 // Chaque champ : [test, message d'erreur]
 const rules = {
   lastName: [(v) => v.trim().length > 1, 'Indiquez votre nom.'],
@@ -56,7 +58,7 @@ export default function Order({ cart, onRemove, onConfirm, onBrowse }) {
         <Field label="Prénom" name="firstName" autoComplete="given-name" placeholder="Camille" error={errors.firstName} />
         <Field label="E-mail" name="email" type="email" autoComplete="email" placeholder="moi@exemple.fr" error={errors.email} />
         <Field label="Téléphone" name="phone" type="tel" autoComplete="tel" placeholder="06 12 34 56 78" error={errors.phone} />
-        <Field label="Jour de retrait" name="date" type="date" min={new Date().toISOString().slice(0, 10)} error={errors.date} />
+        <Field label="Jour de retrait" name="date" type="date" min={today} defaultValue={today} error={errors.date} />
         <Field label="Numéro de carte" name="card" inputMode="numeric" placeholder="1234 5678 9012 3456" error={errors.card} />
         <Field label="Expiration" name="expiry" placeholder="MM/AA" error={errors.expiry} />
         <Button className="md:col-span-2">Payer {total.toFixed(2)} €</Button>
