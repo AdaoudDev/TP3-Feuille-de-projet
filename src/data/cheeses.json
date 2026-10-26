@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Comté 18 mois", "milk": "vache", "strength": "corsé", "type": "pâte pressée cuite", "region": "Jura", "price": 3.9, "description": "Affiné 18 mois dans nos caves, notes de noisette et cristaux croquants." },
+  { "id": 2, "name": "Morbier", "milk": "vache", "strength": "moyen", "type": "pâte pressée", "region": "Jura", "price": 2.8, "description": "Reconnaissable à sa raie de charbon végétal, pâte souple et fruitée." },
+  { "id": 3, "name": "Mont d'Or", "milk": "vache", "strength": "doux", "type": "pâte molle", "region": "Jura", "price": 3.2, "description": "Cerclé d'épicéa, crémeux à souhait. Se déguste aussi chaud au four." },
+  { "id": 4, "name": "Brie de Meaux", "milk": "vache", "strength": "moyen", "type": "pâte molle", "region": "Île-de-France", "price": 2.9, "description": "Croûte fleurie, cœur fondant et goût de champignon frais." },
+  { "id": 5, "name": "Camembert de Normandie", "milk": "vache", "strength": "moyen", "type": "pâte molle", "region": "Normandie", "price": 2.4, "description": "Au lait cru, moulé à la louche, coulant à point." },
+  { "id": 6, "name": "Langres", "milk": "vache", "strength": "corsé", "type": "pâte molle", "region": "Champagne", "price": 3.1, "description": "Croûte lavée orangée, on l'arrose de champagne dans sa fontaine." },
+  { "id": 7, "name": "Chaource", "milk": "vache", "strength": "doux", "type": "pâte molle", "region": "Champagne", "price": 2.7, "description": "Frais et lactique, idéal avec une coupe de champagne." },
+  { "id": 8, "name": "Saint-Nectaire", "milk": "vache", "strength": "doux", "type": "pâte pressée", "region": "Auvergne", "price": 2.6, "description": "Pâte onctueuse aux arômes de cave et de noisette." },
+  { "id": 9, "name": "Fourme d'Ambert", "milk": "vache", "strength": "moyen", "type": "persillée", "region": "Auvergne", "price": 2.5, "description": "Le plus doux des bleus, parfait pour débuter." },
+  { "id": 10, "name": "Roquefort", "milk": "brebis", "strength": "corsé", "type": "persillée", "region": "Occitanie", "price": 4.2, "description": "Affiné dans les caves de Combalou, puissant et légèrement salé." },
+  { "id": 11, "name": "Ossau-Iraty", "milk": "brebis", "strength": "moyen", "type": "pâte pressée", "region": "Pays basque", "price": 3.8, "description": "Ferme et fondant, se marie avec la confiture de cerises noires." },
+  { "id": 12, "name": "Pérail", "milk": "brebis", "strength": "doux", "type": "pâte molle", "region": "Aveyron", "price": 3.4, "description": "Petit fromage crémeux au goût délicat de lait de brebis." },
+  { "id": 13, "name": "Crottin de Chavignol", "milk": "chèvre", "strength": "moyen", "type": "pâte molle", "region": "Centre", "price": 3.6, "description": "Délicieux grillé sur une salade, plus sec en vieillissant." },
+  { "id": 14, "name": "Sainte-Maure de Touraine", "milk": "chèvre", "strength": "doux", "type": "pâte molle", "region": "Touraine", "price": 3.3, "description": "Bûche cendrée traversée d'une paille de seigle." },
+  { "id": 15, "name": "Picodon", "milk": "chèvre", "strength": "corsé", "type": "pâte molle", "region": "Drôme", "price": 3.7, "description": "Petit palet sec et piquant, caractère affirmé." }
+]
