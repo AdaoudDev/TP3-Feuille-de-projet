@@ -30,6 +30,12 @@ export default function App() {
           ? <Pickup order={order} />
           : <Order cart={cart} onRemove={remove} onConfirm={setOrder} onBrowse={() => go('products')} />)}
       </main>
+      <footer className="bg-primary-dark text-cream">
+        <nav className="max-w-5xl mx-auto px-4 flex flex-wrap gap-6 min-h-16 items-center">
+          <a href="https://docs.google.com/document/d/1DYdL9B-1mvCjfU6tbQsqg8KOS8nc1bGIKBWmpCeoJtM/edit?usp=sharing" target="_blank" className="py-3 underline">Dossier de projet</a>
+          <a href="https://github.com/AdaoudDev/TP3-Feuille-de-projet" target="_blank" className="py-3 underline">Code sur GitHub</a>
+        </nav>
+      </footer>
     </>
   )
 }
