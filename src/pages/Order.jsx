@@ -7,7 +7,9 @@ import Section from '../components/Section'
 
 // Chaque champ : [test, message d'erreur]
 const rules = {
-  name: [(v) => v.trim().length > 1, 'Indiquez votre nom.'],
+  lastName: [(v) => v.trim().length > 1, 'Indiquez votre nom.'],
+  firstName: [(v) => v.trim().length > 1, 'Indiquez votre prénom.'],
+  email: [(v) => /^\S+@\S+\.\S+$/.test(v), 'Adresse e-mail invalide, ex. moi@exemple.fr.'],
   phone: [(v) => /^0\d{9}$/.test(v.replace(/\s/g, '')), 'Numéro à 10 chiffres, ex. 06 12 34 56 78.'],
   date: [(v) => v, 'Choisissez un jour de retrait.'],
   card: [(v) => /^\d{16}$/.test(v.replace(/\s/g, '')), 'Numéro de carte à 16 chiffres.'],
@@ -50,8 +52,10 @@ export default function Order({ cart, onRemove, onConfirm, onBrowse }) {
       </Card>
 
       <form noValidate onSubmit={submit} className="grid gap-4 md:grid-cols-2">
-        <Field label="Nom" name="name" autoComplete="name" error={errors.name} />
-        <Field label="Téléphone" name="phone" type="tel" autoComplete="tel" error={errors.phone} />
+        <Field label="Nom" name="lastName" autoComplete="family-name" placeholder="Dupont" error={errors.lastName} />
+        <Field label="Prénom" name="firstName" autoComplete="given-name" placeholder="Camille" error={errors.firstName} />
+        <Field label="E-mail" name="email" type="email" autoComplete="email" placeholder="moi@exemple.fr" error={errors.email} />
+        <Field label="Téléphone" name="phone" type="tel" autoComplete="tel" placeholder="06 12 34 56 78" error={errors.phone} />
         <Field label="Jour de retrait" name="date" type="date" min={new Date().toISOString().slice(0, 10)} error={errors.date} />
         <Field label="Numéro de carte" name="card" inputMode="numeric" placeholder="1234 5678 9012 3456" error={errors.card} />
         <Field label="Expiration" name="expiry" placeholder="MM/AA" error={errors.expiry} />

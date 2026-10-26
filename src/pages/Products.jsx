@@ -11,8 +11,8 @@ const milks = ['vache', 'chèvre', 'brebis']
 const strengths = ['doux', 'moyen', 'corsé']
 
 export default function Products({ onAdd }) {
-  const [milk, setMilk] = useState([]) // plusieurs laits possibles
-  const [strength, setStrength] = useState('') // une seule intensité
+  const [milk, setMilk] = useState([])
+  const [strength, setStrength] = useState('')
   const [sorted, setSorted] = useState(false)
   const [selected, setSelected] = useState(null)
 

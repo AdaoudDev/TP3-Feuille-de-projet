@@ -5,8 +5,8 @@ import Order from './pages/Order'
 import Pickup from './pages/Pickup'
 
 export default function App() {
-  const [page, setPage] = useState('home') // 'home' | 'products' | 'order'
-  const [cart, setCart] = useState({}) // { id du fromage: nombre de portions de 100 g }
+  const [page, setPage] = useState('home')
+  const [cart, setCart] = useState({})
   const [order, setOrder] = useState(null)
 
   const go = (p) => { setPage(p); window.scrollTo(0, 0) }

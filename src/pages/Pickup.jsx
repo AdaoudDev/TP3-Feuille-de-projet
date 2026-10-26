@@ -4,7 +4,7 @@ import Section from '../components/Section'
 // Affiché après la commande : comment venir la récupérer
 export default function Pickup({ order }) {
   return (
-    <Section title={`Merci ${order.name} !`}>
+    <Section title={`Merci ${order.firstName} !`}>
       <p>Votre commande est confirmée. Elle sera prête le {new Date(order.date).toLocaleDateString('fr-FR')}.</p>
       <div className="grid gap-4 md:grid-cols-3">
         <Card title="Adresse"><p>12 rue du Pré, 39200 Saint-Claude</p></Card>
