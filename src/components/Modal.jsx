@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import Button from './Button'
 
-// <dialog> natif : gère Échap et le focus tout seul
 export default function Modal({ onClose, children }) {
   const ref = useRef()
   useEffect(() => ref.current.showModal(), [])
