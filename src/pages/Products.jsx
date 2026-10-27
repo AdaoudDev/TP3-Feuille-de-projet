@@ -36,7 +36,7 @@ export default function Products({ onAdd }) {
       {!list.length && <p>Aucun fromage ne correspond à ces filtres.</p>}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {list.map((c) => (
-          <Card key={c.id} title={c.name}>
+          <Card key={c.id} title={c.name} image={`/images/${c.id}.jpg`} alt={`${c.name}, fromage au lait de ${c.milk}`}>
             <div className="flex flex-wrap gap-2"><Badge>{c.milk}</Badge><Badge>{c.strength}</Badge><Badge>{c.region}</Badge></div>
             <p className="font-semibold">{c.price.toFixed(2)} € / 100 g</p>
             <div className="flex flex-wrap gap-2 mt-auto">

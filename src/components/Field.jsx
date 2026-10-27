@@ -5,7 +5,7 @@ export default function Field({ label, error, ...props }) {
       {label}
       <input
         aria-invalid={!!error}
-        className={`min-h-11 px-3 rounded-lg border-2 bg-white font-normal ${error ? 'border-error' : 'border-ink/30'}`}
+        className={`min-h-11 px-3 rounded-lg border-2 bg-surface font-normal ${error ? 'border-error' : 'border-ink/30'}`}
         {...props}
       />
       {error && <span className="text-error text-sm font-normal">{error}</span>}
